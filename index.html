@@ -117,6 +117,17 @@
     }
     .delta-good { color: var(--green); font-weight: 600; }
     .delta-bad { color: var(--red); font-weight: 600; }
+    .delta-badge {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 12px;
+      display: inline-block;
+    }
+    .delta-up { background: rgba(74, 222, 128, 0.15); color: var(--green); }
+    .delta-down { background: rgba(248, 113, 113, 0.15); color: var(--red); }
+
 
     /* Section */
     section {
@@ -340,6 +351,8 @@
               <th>在研总数</th>
               <th>已度量 / 待关联</th>
               <th>9月考核均分 (含0)</th>
+              <th>8月基线</th>
+              <th>环比变化 (Δ)</th>
               <th>达标率 (≥70)</th>
               <th>领跑标杆产品</th>
               <th>垫底重点治理产品</th>
@@ -352,6 +365,8 @@
               <td>2 款</td>
               <td>2 / 0</td>
               <td><span class="score-badge score-green">73.5 分</span></td>
+              <td style="color:var(--text-muted)">66.5 分</td>
+              <td><span class="delta-badge delta-up">+7.0 🟢</span></td>
               <td>50% (1/2)</td>
               <td>讯飞输入法 (79分)</td>
               <td>互联网酷音 (68分)</td>
@@ -362,6 +377,8 @@
               <td>1 款</td>
               <td>1 / 0</td>
               <td><span class="score-badge score-green">66.0 分</span></td>
+              <td style="color:var(--text-muted)">67.0 分</td>
+              <td><span class="delta-badge delta-down">-1.0 🔴</span></td>
               <td>0% (0/1)</td>
               <td>iFlyBase基础平台 (66分)</td>
               <td>iFlyBase基础平台 (66分)</td>
@@ -372,6 +389,8 @@
               <td>5 款</td>
               <td>5 / 0</td>
               <td><span class="score-badge score-green">65.6 分</span></td>
+              <td style="color:var(--text-muted)">63.0 分</td>
+              <td><span class="delta-badge delta-up">+2.6 🟢</span></td>
               <td>20% (1/5)</td>
               <td>双屏翻译机导览版 (77分)</td>
               <td>讯飞翻译APP (59分)</td>
@@ -382,6 +401,8 @@
               <td>7 款</td>
               <td>6 / 1</td>
               <td><span class="score-badge score-green">65.4 分</span></td>
+              <td style="color:var(--text-muted)">75.8 分</td>
+              <td><span class="delta-badge delta-down">-10.4 🔴</span></td>
               <td>71% (5/7)</td>
               <td>营销SaaS平台 (88分)</td>
               <td>aiBoost存量营销平台 (0分)</td>
@@ -392,6 +413,8 @@
               <td>9 款</td>
               <td>9 / 0</td>
               <td><span class="score-badge score-green">65.3 分</span></td>
+              <td style="color:var(--text-muted)">59.1 分</td>
+              <td><span class="delta-badge delta-up">+6.2 🟢</span></td>
               <td>44% (4/9)</td>
               <td>智慧办公解决方案 (91分)</td>
               <td>同传麦克风S30 (28分)</td>
@@ -402,6 +425,8 @@
               <td>4 款</td>
               <td>4 / 0</td>
               <td><span class="score-badge score-green">63.8 分</span></td>
+              <td style="color:var(--text-muted)">67.5 分</td>
+              <td><span class="delta-badge delta-down">-3.7 🔴</span></td>
               <td>50% (2/4)</td>
               <td>读写笔记 (86分)</td>
               <td>智能办公本T5C (25分)</td>
@@ -412,6 +437,8 @@
               <td>2 款</td>
               <td>2 / 0</td>
               <td><span class="score-badge score-red">49.0 分</span></td>
+              <td style="color:var(--text-muted)">40.7 分</td>
+              <td><span class="delta-badge delta-up">+8.3 🟢</span></td>
               <td>50% (1/2)</td>
               <td>录音笔软件平台 (71分)</td>
               <td>讯飞录音环 (27分)</td>
@@ -422,6 +449,8 @@
               <td>15 款</td>
               <td>14 / 1</td>
               <td><span class="score-badge score-red">40.8 分</span></td>
+              <td style="color:var(--text-muted)">32.6 分</td>
+              <td><span class="delta-badge delta-up">+8.2 🟢</span></td>
               <td>13% (2/15)</td>
               <td>星火SparkDesk (73分)</td>
               <td>Spark Insight (0分)</td>
@@ -432,6 +461,8 @@
               <td>3 款</td>
               <td>2 / 1</td>
               <td><span class="score-badge score-red">13.7 分</span></td>
+              <td style="color:var(--text-muted)">23.0 分</td>
+              <td><span class="delta-badge delta-down">-9.3 🔴</span></td>
               <td>0% (0/3)</td>
               <td>生成式驾驶舱 (23分)</td>
               <td>智能评标 (0分)</td>
